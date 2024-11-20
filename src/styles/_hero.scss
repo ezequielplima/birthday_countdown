@@ -1,10 +1,14 @@
+@use 'variables';
+
 .hero {
     padding-top: 64px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     background-image: url(../images/Flu\ aniversario.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-position: relative;
+    width: 100vw;
+    height: 100vh;
 
     .container {
         position: relative;
@@ -18,7 +22,7 @@
         height: 100%;
         background-color: green;
         content: '';
-        opacity: .7;
+        opacity: .5;
     }
 
     &__text {
@@ -31,18 +35,10 @@
 
 
     }
-
-    &__logo {
-        margin: 0 auto;
-        height: 80px;
-        display: block;
-    }
-    //responsivo p/ celular
+   //responsivo p/ celular
+ 
     @media (max-width: 640px) {
         padding: 40px 0;
-        &__logo {
-            height: 40px;
-        }
 
         &__text {
             font-size: 22px;
